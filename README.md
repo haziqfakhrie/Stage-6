@@ -1,3 +1,3 @@
-#Stupendous Sloths Project Proposal - Water Level Monitoring System for Carwash
+# Stupendous Sloths Project Proposal - Water Level Monitoring System for Carwash
 
-#Problem Statement
+# Problem Statement
