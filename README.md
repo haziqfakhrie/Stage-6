@@ -1,9 +1,10 @@
 # Stupendous Sloths Project Proposal - Water Level Monitoring System for Carwash
-[insert text]
+The Water Level Monitoring System for Carwash is a project aimed at developing an efficient and sustainable solution for monitoring and managing water levels in carwash facilities. With the increasing concern for water conservation and environmental sustainability, it is crucial to implement effective measures to optimize water usage in various industries, including carwashes. This project proposes the implementation of a real-time monitoring system that tracks water levels and provides data-driven insights to enhance water management practices.
 
 # Problem Statement
 
-[insert text]
+With the increasing demand for sustainable practices in business, carwash establishments must address the challenges of managing water resources effectively. To this end, we propose the implementation of a water level monitoring system that can provide real-time data on water usage, optimize water consumption, prevent equipment damage, and contribute to environmental sustainability efforts. Our proposal aims to assist car wash businesses in their efforts to reduce costs, increase profitability, and enhance their reputation as responsible corporate citizens.
+
 
 # System Architecture
 
