@@ -36,7 +36,7 @@ While a proximity sensor is not directly related to water level monitoring, it c
 **ESP8266 Microcontroller**
 This proposed IoT project aims to monitor water levels in a carwash in order to optimize water usage and minimize costs. The water level will be monitored using an ultrasonic sensor connected to an ESP8266 microcontroller. Additionally, a proximity sensor will be used to count cars passing through the carwash, which will provide data on the water usage per car. The ESP8266 is chosen due to its low cost, high processing power, and Wi-Fi connectivity, making it a suitable choice for this project. By monitoring water levels and usage, the carwash can optimize water usage, reduce costs, and improve overall efficiency.
 
-# CLOUD PLATFORM
+# Cloud Platform
 
 **Ingest Data**
 Firstly, DjangoREST framework allows for easy creation of RESTful APIs, which are ideal for IoT projects that require data ingestion from multiple sources. RESTful APIs are lightweight, flexible, and can handle a large number of requests, making them suitable for IoT projects that involve large volumes of data.
