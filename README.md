@@ -13,7 +13,7 @@ With the increasing demand for sustainable practices in business, carwash establ
 
 The proposed system architecture involves using an ESP8266 microcontroller along with ultrasonic for water level monitoring. The data collected by the sensors is then transmitted to a cloud server using the MQTT protocol via CloudMQTT. The cloud server stores the data in an MYSQL database, which is accessible through an API built using Django Framework. Finally, the data is visualized through a dashboard created using Grafana, providing real-time insights into the water tank level. This system architecture offers a complete end-to-end solution for water level monitoring enabling businesses to make informed decisions about their water usage and optimize their carwash operations.
 
-![Alt text](https://github.com/azlanazim/g2proposal/blob/main/Images/Software%20Engineering%20Project%20System%20Architecture.png)
+![Alt text](https://github.com/haziqfakhrie/Stage-6/blob/fda703dc1857baf682b8524acf2045ce4e81c795/Images/Software%20Engineering%20Project%20System%20Architecture%20(1).png)
 
 # Sensor & Devices
 
@@ -66,10 +66,7 @@ Overall, InfluxDB is a suitable choice for storing data in IoT projects due to i
 Grafana is a suitable tool in IoT projects because it provides a real-time monitoring and visualization platform that can display data from various sources, including IoT devices. Its customizable dashboards and visualization options make it easy to track and analyze complex data in real-time, enabling users to quickly identify and troubleshoot issues. Grafana also supports alerting and dashboard sharing, making it a versatile and collaborative tool for IoT projects.
 
 
-![Alt text](https://github.com/azlanazim/g2proposal/blob/main/Images/Dashboard%20Draft%20G2%20SE.png)
+![Alt text](https://github.com/haziqfakhrie/Stage-6/blob/fda703dc1857baf682b8524acf2045ce4e81c795/Images/grafana%20dashboard.jpg)
 
-# Webpage
-
-http://azlanazim.pythonanywhere.com/
 
 
