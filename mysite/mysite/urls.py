@@ -19,10 +19,14 @@ from django.urls import path,include
 from myapp.views import (
     home_screen_view,
     index,
+    subscribe_to_mqtt_broker,
+    
+
 )
 urlpatterns = [
 
     path("",home_screen_view),
     path("welcome/",index),
     path("admin/", admin.site.urls),
+    path('mqtt/subscribe/', subscribe_to_mqtt_broker, name='subscribe'),
 ]
