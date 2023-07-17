@@ -11,14 +11,14 @@ With the increasing demand for sustainable practices in business, carwash establ
 
 # System Architecture
 
-The proposed system architecture involves using an ESP8266 microcontroller along with ultrasonic for water level monitoring. The data collected by the sensors is then transmitted to a cloud server using the MQTT protocol via CloudMQTT. The cloud server stores the data in an MYSQL database, which is accessible through an API built using Django Framework. Finally, the data is visualized through a dashboard created using Grafana, providing real-time insights into the water tank level. This system architecture offers a complete end-to-end solution for water level monitoring enabling businesses to make informed decisions about their water usage and optimize their carwash operations.
+The proposed system architecture involves using an ESP8266 microcontroller along with ultrasonic for water level monitoring. The data collected by the sensors is then transmitted to a cloud server using the MQTT protocol via EMQX. The cloud server stores the data in an MYSQL database, which is accessible through an API built using Django Framework. Finally, the data is visualized through a dashboard created using Grafana, providing real-time insights into the water tank level. This system architecture offers a complete end-to-end solution for water level monitoring enabling businesses to make informed decisions about their water usage and optimize their carwash operations.
 
 ![Alt text](https://github.com/haziqfakhrie/Stage-6/blob/fda703dc1857baf682b8524acf2045ce4e81c795/Images/Software%20Engineering%20Project%20System%20Architecture%20(1).png)
 
 # Sensor & Devices
 
 ## Protocol
-The MQTT protocol using cloudMQTT is an ideal choice for IoT projects due to its lightweight and efficient communication model, as well as its ability to handle a large number of connected devices. CloudMQTT is a cloud-based broker service that provides a scalable and reliable platform for hosting MQTT-based IoT applications. It offers various plans that allow for customization of the number of connections, data transfer limits, and security features to suit the specific needs of the project. The MQTT protocol using cloudMQTT is a suitable choice for this IoT project due to its lightweight and efficient communication model, ability to handle a large number of connected devices, and support for secure and reliable communication. It offers a scalable and reliable platform for hosting MQTT-based IoT applications, making it ideal for a water tank monitoring system
+Using the MQTT protocol with EMQ X as the MQTT broker is an excellent choice for IoT projects like a water tank monitoring system. MQTT's lightweight and efficient communication model makes it ideal for resource-constrained devices such as ESP32. EMQ X, an open-source MQTT broker, provides a reliable platform for hosting MQTT-based IoT applications. It offers scalability, high availability, and security features like TLS encryption and authentication, ensuring efficient and secure communication between the ESP32 devices and the server. With EMQ X, you can handle a large number of connected devices, facilitate real-time data exchange, and ensure reliable communication for your water tank monitoring system.
 
 ## Sensors
 
@@ -36,7 +36,6 @@ Finally, the ultrasonic sensor is cost-effective and readily available, making i
 **ESP8266 Microcontroller**
 This proposed IoT project aims to monitor water levels in a carwash in order to optimize water usage and minimize costs. The water level will be monitored using an ultrasonic sensor connected to an ESP8266 microcontroller. Additionally, a proximity sensor will be used to count cars passing through the carwash, which will provide data on the water usage per car. The ESP8266 is chosen due to its low cost, high processing power, and Wi-Fi connectivity, making it a suitable choice for this project. By monitoring water levels and usage, the carwash can optimize water usage, reduce costs, and improve overall efficiency.
 
-# Cloud Platform
 
 **Ingest Data**
 Firstly, DjangoREST framework allows for easy creation of RESTful APIs, which are ideal for IoT projects that require data ingestion from multiple sources. RESTful APIs are lightweight, flexible, and can handle a large number of requests, making them suitable for IoT projects that involve large volumes of data.
@@ -50,15 +49,8 @@ Additionally, DjangoREST framework provides a secure and scalable platform for i
 Overall, DjangoREST framework is a suitable choice for ingesting data as an API in IoT projects due to its flexibility, scalability, ease of use, and support for a variety of data formats. It provides a robust platform for building RESTful APIs that can handle large volumes of data and integrate easily with other components of the IoT project.
 
 **Storage**
-Firstly, InfluxDB is designed to handle time-series data, which is ideal for IoT projects that involve real-time data collection from sensors and other devices. It can efficiently store and manage large volumes of data with high write and read throughput, making it suitable for high-frequency data ingestion in IoT projects.
 
-Secondly, InfluxDB has a flexible data model that allows for easy organization and querying of data. It uses a tag-based schema that can be used to add metadata to data points, making it easy to filter and query data based on different criteria.
-
-Thirdly, InfluxDB provides a powerful query language, InfluxQL, which allows for complex data queries and aggregations. This makes it easy to analyze and visualize data from different sensors and devices in an IoT project.
-
-Additionally, InfluxDB has built-in support for continuous queries and retention policies, which allow for data to be automatically aggregated and downsampled over time. This reduces the storage requirements for long-term data retention, making it more cost-effective for IoT projects that involve long-term data storage.
-
-Overall, InfluxDB is a suitable choice for storing data in IoT projects due to its ability to handle large volumes of time-series data efficiently, flexible data model, powerful query language, and built-in support for data retention policies.
+MySQL is a widely-used relational database management system that offers several advantages for storing IoT data. It provides a structured approach for efficient storage and management of structured IoT data. With its SQL query language, MySQL enables complex data operations like aggregations and filtering. The widespread adoption of MySQL ensures extensive community support and resources for troubleshooting. It scales well, handles large datasets, and maintains data integrity through ACID compliance. While it may not have specialized time-series capabilities, MySQL is a reliable choice for IoT projects that prioritize structured data management and relational capabilities.
 
 
 # Dashboard
