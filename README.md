@@ -1,14 +1,17 @@
-# Stupendous Sloths Project Proposal - Water Level Monitoring System for Carwash
+## Stupendous Sloths Project Proposal - Water Level Monitoring System for Carwash
+
+# Project Background 
+
 The Water Level Monitoring System for Carwash is a project aimed at developing an efficient and sustainable solution for monitoring and managing water levels in carwash facilities. With the increasing concern for water conservation and environmental sustainability, it is crucial to implement effective measures to optimize water usage in various industries, including carwashes. This project proposes the implementation of a real-time monitoring system that tracks water levels and provides data-driven insights to enhance water management practices.
 
 # Problem Statement
 
-With the increasing demand for sustainable practices in business, carwash establishments must address the challenges of managing water resources effectively. To this end, we propose the implementation of a water level monitoring system that can provide real-time data on water usage, optimize water consumption, prevent equipment damage, and contribute to environmental sustainability efforts. Our proposal aims to assist car wash businesses in their efforts to reduce costs, increase profitability, and enhance their reputation as responsible corporate citizens.
+With the increasing demand for sustainable practices in business, carwash establishments must address the challenges of managing water resources effectively. To this end, we propose the implementation of a water level monitoring system that can provide real-time data on water usageto optimize water consumption, and contribute to environmental sustainability efforts. Our project aims to assist car wash businesses in their efforts to reduce costs, increase profitability, and enhance their reputation as responsible corporate citizens.
 
 
 # System Architecture
 
-The proposed system architecture involves using an ESP8266 microcontroller along with ultrasonic and proximity sensors for water level monitoring and car counting, respectively. The data collected by the sensors is then transmitted to a cloud server using the MQTT protocol via CloudMQTT. The cloud server stores the data in an InfluxDB database, which is accessible through an API built using Django Rest Framework (DRF). Finally, the data is visualized through a dashboard created using Grafana, providing real-time insights into the water usage and carwash traffic. This system architecture offers a complete end-to-end solution for water level monitoring and car counting, enabling businesses to make informed decisions about their water usage and optimize their carwash operations.
+The proposed system architecture involves using an ESP8266 microcontroller along with ultrasonic for water level monitoring. The data collected by the sensors is then transmitted to a cloud server using the MQTT protocol via CloudMQTT. The cloud server stores the data in an MYSQL database, which is accessible through an API built using Django Framework. Finally, the data is visualized through a dashboard created using Grafana, providing real-time insights into the water tank level. This system architecture offers a complete end-to-end solution for water level monitoring enabling businesses to make informed decisions about their water usage and optimize their carwash operations.
 
 ![Alt text](https://github.com/azlanazim/g2proposal/blob/main/Images/Software%20Engineering%20Project%20System%20Architecture.png)
 
@@ -25,9 +28,6 @@ The ultrasonic sensor is an ideal choice for water level monitoring in an IoT pr
 Secondly, ultrasonic sensors are easy to install and do not require complex calibration. They can be easily attached to the top of the water tank, making installation and maintenance a simple task. Next, ultrasonic sensors can measure the water level in real-time, allowing the system to send alerts and adjust water usage accordingly. This capability enables businesses to optimize water usage, prevent equipment damage, and contribute to environmental sustainability efforts.
 
 Finally, the ultrasonic sensor is cost-effective and readily available, making it an accessible and practical solution for small and medium-sized businesses. When used in conjunction with the ESP8266 microcontroller, the ultrasonic sensor can provide accurate and reliable data to monitor water levels in real-time, making it a suitable choice for a water level monitoring IoT project.
-
-**Proximity Sensor**
-While a proximity sensor is not directly related to water level monitoring, it can still be useful in an IoT project for monitoring water usage. By counting the number of cars passing through a carwash, the system can estimate the amount of water used for each wash cycle. This data can be correlated with the water level data obtained from the ultrasonic sensor to determine the efficiency of the carwash system and identify opportunities to optimize water usage.
 
 
 
