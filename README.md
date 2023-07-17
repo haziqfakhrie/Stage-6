@@ -60,5 +60,11 @@ Grafana is a suitable tool in IoT projects because it provides a real-time monit
 
 ![Alt text](https://github.com/haziqfakhrie/Stage-6/blob/fda703dc1857baf682b8524acf2045ce4e81c795/Images/grafana%20dashboard.jpg)
 
+# Results
 
+The Water Level Monitoring System for Carwash project was successful in achieving its objectives of providing a real-time monitoring solution for water levels in carwash facilities. The implemented system effectively tracked water levels using ultrasonic sensors connected to ESP8266 microcontrollers. The MQTT protocol, facilitated by EMQ X as the MQTT broker, ensured efficient and reliable communication between the devices and the cloud server. The data collected from the sensors was ingested into an MYSQL database using the DjangoREST framework.
+
+The system successfully provided real-time insights into the water tank levels through a Grafana dashboard. This visualization platform enabled carwash businesses to monitor water usage and make data-driven decisions to optimize water consumption and improve their environmental sustainability efforts. The integration of proximity sensors to count cars passing through the carwash further enhanced the system's ability to track water usage per car, allowing businesses to analyze water consumption patterns and identify opportunities for improvement.
+
+Overall, the Water Level Monitoring System for Carwash project demonstrated the successful implementation of a comprehensive IoT solution for monitoring and managing water levels in carwash facilities. By providing real-time data, the system empowered businesses to optimize water usage, reduce costs, and enhance their reputation as environmentally responsible entities.
 
